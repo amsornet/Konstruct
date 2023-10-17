@@ -19,10 +19,14 @@ body
   padding: 0 25rem
 
   /* раздел "Our Story" */
+
 .story
+
   &_inner
     display: flex
+
   &_left
+    max-width: 39.8rem
 
   &_title_2
     text-transform: uppercase
@@ -30,15 +34,21 @@ body
     font-weight: bold
     font-size: 1.8rem
     padding: 5rem 0
-  &_title_2::after
+
+  &_title_2:after
     content: ''
     width: 5rem
     height: .2rem
     background-color: #00A4E5
+    display: block
+    margin: 1rem auto 0
 
   &_title_3
+    font-weight: bold
+    font-size: 2rem
   &_text
   &_right
   &_item
 
 .accent-color
+  color: #00a4e5

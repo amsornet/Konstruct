@@ -25,6 +25,9 @@ body {
 .story_inner {
   display: flex;
 }
+.story_left {
+  max-width: 39.8rem;
+}
 .story_title_2 {
   text-transform: uppercase;
   text-align: center;
@@ -32,9 +35,19 @@ body {
   font-size: 1.8rem;
   padding: 5rem 0;
 }
-.story_title_2::after {
+.story_title_2:after {
   content: "";
   width: 5rem;
   height: 0.2rem;
   background-color: #00A4E5;
+  display: block;
+  margin: 1rem auto 0;
+}
+.story_title_3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.accent-color {
+  color: #00a4e5;
 }
