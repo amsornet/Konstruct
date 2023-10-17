@@ -22,6 +22,19 @@ body {
   /* раздел "Our Story" */
 }
 
+.story_inner {
+  display: flex;
+}
 .story_title_2 {
   text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 5rem 0;
+}
+.story_title_2::after {
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #00A4E5;
 }
