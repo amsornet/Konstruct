@@ -14,21 +14,24 @@ body
 
 .container
   width: 100%
-  max-width: 114rem
+  max-width: 144rem
   margin: 0 auto
   padding: 0 25rem
 
-  /* раздел "Our Story" */
+/* раздел "Our Story" */
 
 .story
 
   &_inner
     display: flex
+    justify-content: center
 
   &_left
     max-width: 39.8rem
+    margin-right: 5rem
 
   &_title_2
+    color: #48555B
     text-transform: uppercase
     text-align: center
     font-weight: bold
@@ -46,9 +49,61 @@ body
   &_title_3
     font-weight: bold
     font-size: 2rem
+    margin-bottom: 3rem
+    letter-spacing: auto
   &_text
+    font-size: 13px
+    font-weight: regular
+    line-height: 2.3rem
+    letter-spacing: .02rem
+
   &_right
+    display: flex
+    align-items: flex-end
+
   &_item
+    font-size: 24px
+    color: #fff
+    font-weight: 800
+    text-transform: uppercase
+    width: 14rem
+    height: 22.4rem
+    margin-right: 2rem
+
+  &_item:nth-child(1)
+    background-image: url(../img/plan.png)
+  &_item:nth-child(2)
+    background-image: url(../img/manage.png)
+  &_item:nth-child(3)
+    background-image: url(../img/deliver.png)
+    margin-right: 0
 
 .accent-color
   color: #00a4e5
+
+@media screen and (max-width: 1440px)
+  .container
+    padding: 0 5rem
+
+@media screen and (max-width: 1024px)
+  .container
+    padding: 0 1.5rem
+  .story_inner
+    flex-wrap: wrap
+
+@media screen and (max-width: 500px)
+  .story_right
+    flex-wrap: wrap
+  .story_item
+    margin-bottom: 2rem
+
+@media screen and (max-width: 320px)
+  .story_right
+    justify-content: center
+    flex-wrap: wrap
+  .story_item
+    margin: 1rem 2rem
+  .story_item:last-child
+    margin-right: 2rem
+  .story_left
+    margin: 0 auto
